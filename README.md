@@ -18,7 +18,7 @@ on mac:
 
 create you etherbase account:
 ```
-personal.newAccount("your passwork")
+personal.newAccount("your password")
 ```
 
 you will get a account, exit console
