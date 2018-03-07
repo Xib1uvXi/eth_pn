@@ -1,3 +1,8 @@
 #!/bin/bash
-./reset_data_dir.sh
-geth --datadir "/Users/xib/Desktop/pn/data" init geth_gensis.json
+
+root=`pwd`
+
+rm -rf data
+mkdir data
+
+geth --datadir "${root}/data" init geth_gensis.json
