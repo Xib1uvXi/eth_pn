@@ -1,0 +1,1 @@
+geth --identity "private_net" --rpc --rpcport "8545" --rpccorsdomain "*" --datadir "/Users/xib/Desktop/pn/data" --port "30303" --ipcpath '/Users/xib/Library/Ethereum/geth.ipc' --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" --networkid 82403 --nat "any"  --etherbase '0x61886e9da42ba58f333c31716c55f5437a8abde3' console
