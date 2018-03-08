@@ -3,12 +3,12 @@
 ## install Ethereum
 Mac OSX:
 ```
-https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac
+see  https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac
 ```
 
 Ubuntu:
 ```
-https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu
+see  https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu
 ```
 
 ## init env
