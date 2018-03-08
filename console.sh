@@ -18,14 +18,9 @@ else
     exit 1
 fi
 
-etherbase=$2
+etherbase=$(cat .etherbase)
 
 if [ ${etherbase} ];then
-
-    if [ ${etherbase} == "wx" ];then
-        etherbase="0x3f5ee47f7a3d96e9949df010f827f97ef7ed9814"
-    fi
-
     geth --identity "private_net" \
      --rpc --rpcport "8545" \
      --rpccorsdomain "*" \
@@ -49,7 +44,3 @@ else
      --nat "any"  \
      console
 fi
-
-
-
-

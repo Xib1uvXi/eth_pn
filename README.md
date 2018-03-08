@@ -33,7 +33,7 @@ cd you src
 ```
 git clone https://github.com/Xib1uvXi/eth_pn.git
 cd eth_pn
-./init_pn_env.sh
+./init_pn_env.sh set_your_etherbase_password
 ```
 
 ## start private network
@@ -45,15 +45,4 @@ on linux:
 on mac:
 ```
 ./console.sh 2
-```
-
-create you etherbase account:
-```
-personal.newAccount("your password")
-```
-
-you will get a account, exit console
-next time start console:
-```
-./console.sh 1 you_account
 ```
