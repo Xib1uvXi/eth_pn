@@ -1,7 +1,21 @@
 # Create Ethereum Private NetWork
 
-## init env
+## install Ethereum
+Mac OSX:
 ```
+https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Mac
+```
+
+Ubuntu:
+```
+https://github.com/ethereum/go-ethereum/wiki/Installation-Instructions-for-Ubuntu
+```
+
+## init env
+cd you src
+```
+git clone https://github.com/Xib1uvXi/eth_pn.git
+cd eth_pn
 ./init_pn_env.sh
 ```
 
