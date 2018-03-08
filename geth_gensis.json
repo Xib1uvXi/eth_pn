@@ -1,7 +1,7 @@
 {
     "config": {},
     "difficulty": "2000",
-    "gasLimit": "2100000",
+    "gasLimit": "2100000000",
     "alloc": {
     }
 }

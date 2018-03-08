@@ -23,7 +23,7 @@ etherbase=$2
 if [ ${etherbase} ];then
 
     if [ ${etherbase} == "wx" ];then
-        etherbase="0x5fa0eeb4dd48c33b32044ab4c9dc8ca48b640b8c"
+        etherbase="0x3f5ee47f7a3d96e9949df010f827f97ef7ed9814"
     fi
 
     geth --identity "private_net" \
