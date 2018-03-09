@@ -23,7 +23,7 @@ pwd=$(cat .pwd)
 
 if [ ${etherbase} ];then
 
-    if [ $2 ];then
+    if [ $2 == "test" ];then
         geth --identity "private_net" \
          --rpc --rpcport "8545" \
          --rpccorsdomain "*" \
@@ -36,7 +36,8 @@ if [ ${etherbase} ];then
          --etherbase "${etherbase}" \
          --password <(echo ${pwd}) \
          --unlock "${etherbase}" \
-         console
+         --mine \
+         --minerthreads=1
     else
         geth --identity "private_net" \
          --rpc --rpcport "8545" \
@@ -48,6 +49,8 @@ if [ ${etherbase} ];then
          --networkid 82403 \
          --nat "any"  \
          --etherbase "${etherbase}" \
+         --password <(echo ${pwd}) \
+         --unlock "${etherbase}" \
          console
     fi
 
