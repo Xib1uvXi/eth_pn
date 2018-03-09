@@ -23,3 +23,6 @@ echo "password:  "${pw}
 
 rm -rf .etherbase
 echo ${account} >> .etherbase
+
+rm -rf .pwd
+echo ${pw} >> .pwd

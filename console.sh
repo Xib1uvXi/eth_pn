@@ -19,19 +19,38 @@ else
 fi
 
 etherbase=$(cat .etherbase)
+pwd=$(cat .pwd)
 
 if [ ${etherbase} ];then
-    geth --identity "private_net" \
-     --rpc --rpcport "8545" \
-     --rpccorsdomain "*" \
-     --datadir "${root}/data" \
-     --port "30303" \
-     --ipcpath "${ipc}" \
-     --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" \
-     --networkid 82403 \
-     --nat "any"  \
-     --etherbase "${etherbase}" \
-     console
+
+    if [ $2 ];then
+        geth --identity "private_net" \
+         --rpc --rpcport "8545" \
+         --rpccorsdomain "*" \
+         --datadir "${root}/data" \
+         --port "30303" \
+         --ipcpath "${ipc}" \
+         --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" \
+         --networkid 82403 \
+         --nat "any"  \
+         --etherbase "${etherbase}" \
+         --password <(echo ${pwd}) \
+         --unlock "${etherbase}" \
+         console
+    else
+        geth --identity "private_net" \
+         --rpc --rpcport "8545" \
+         --rpccorsdomain "*" \
+         --datadir "${root}/data" \
+         --port "30303" \
+         --ipcpath "${ipc}" \
+         --rpcapi "admin,db,eth,debug,miner,net,shh,txpool,personal,web3" \
+         --networkid 82403 \
+         --nat "any"  \
+         --etherbase "${etherbase}" \
+         console
+    fi
+
 else
     geth --identity "private_net" \
      --rpc --rpcport "8545" \
