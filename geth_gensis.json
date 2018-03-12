@@ -1,6 +1,6 @@
 {
     "config": {
-        "homesteadBlock": 10
+        "homesteadBlock": 0
     },
     "difficulty": "2000",
     "gasLimit": "2100000000",
