@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+if [ $(which geth) == "geth not found" ];then
+    echo "geth not found, please install geth or set geth to path"
+    exit 2
+fi
 
 root=`pwd`
 
